@@ -6,7 +6,7 @@ repo_url = "https://files.ballistica.net/bombsquad/builds/old/" + archive_name
 
 # Download and extract the server if the folder doesn't exist
 if not os.path.exists(folder_name):
-    os.system(f"wget {repo_url}")
+    os.system(f"curl {repo_url}")
     os.system(f"tar -xzf {archive_name}")
     print("Server downloaded and extracted:", repo_url)
 
