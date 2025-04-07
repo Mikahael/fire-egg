@@ -1,0 +1,25 @@
+import os
+
+folder_name = "BombSquad_Server_Linux_x86_64_1.7.19"
+archive_name = folder_name + ".tar.gz"
+repo_url = "https://files.ballistica.net/bombsquad/builds/old/" + archive_name
+
+# Download and extract the server if the folder doesn't exist
+if not os.path.exists(folder_name):
+    os.system(f"wget {repo_url}")
+    os.system(f"tar -xzf {archive_name}")
+    print("Server downloaded and extracted:", repo_url)
+
+# Change directory to the server folder
+os.chdir(folder_name)
+
+os.system("chmod 777 bombsquad_server")
+os.system("chmod 777 config.yaml")
+
+scripts = "dist" 
+os.chdir(scripts)
+
+os.system("chmod 777 bombsquad_headless")
+os.chdir("..")
+os.environ['MACHINE_ID'] = "3b8f6c9a-7d2e-4a0a-9e14-2c77e9c223ab"
+os.system("./bombsquad_server")
