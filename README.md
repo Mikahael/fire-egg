@@ -4,4 +4,6 @@
  
  ~ done the PCMODDER WAY
 
- All rights to Mikahael/Avarohana/PCMOODER
+To whomsoever it may conern : 
+
+ All rights to Mikahael/Avarohana/PCMODDER as the license states above.
