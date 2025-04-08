@@ -2,11 +2,11 @@ import os
 
 folder_name = "BombSquad_Server_Linux_x86_64_1.7.19"
 archive_name = folder_name + ".tar.gz"
-repo_url = "https://files.ballistica.net/bombsquad/builds/old/" + archive_name
+repo_url = "https://files.ballistica.net/bombsquad/builds/old/BombSquad_Server_Linux_x86_64_1.7.19.tar.gz"
 
 # Download and extract the server if the folder doesn't exist
 if not os.path.exists(folder_name):
-    os.system(f"curl {repo_url}")
+    os.system(f"curl -O {repo_url}")  # <-- This is the fix
     os.system(f"tar -xzf {archive_name}")
     print("Server downloaded and extracted:", repo_url)
 
