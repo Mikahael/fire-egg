@@ -2,7 +2,7 @@
 
  ~ tech will work with any version that supports python 3.10
 
- ~ contact destiny7995 for support ---> discord
+ ~ contact *destiny7995* for support ---> discord
  
  ~ done the PCMODDER WAY
 
