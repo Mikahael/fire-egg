@@ -9,4 +9,4 @@
 To whomsoever it may concern,
 
 - All rights to Mikahael/Avarohana/PCMODDER as the license states above.
-- Thanks to GOD
+- Thanks to God
